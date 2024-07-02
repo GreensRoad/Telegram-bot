@@ -1,0 +1,1 @@
+print((lambda a,b: b if a > b else b) (11, 2))
