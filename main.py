@@ -24,7 +24,7 @@ def welcome(message):
 # Обработчики кнопок
 @bot.callback_query_handler(func=lambda call: call.data == 'show_my_photo')
 def send_photo(call):
-  photo_path = r'C:\Users\Green\Desktop\programming\bot\images\me\me.jpg'
+  photo_path = 'https://drive.google.com/file/d/1tYstxkQfkTh98wNhh11kqaJrGt_MTb7v/view?usp=drive_link'
   chat_id = call.message.chat.id
   bot.send_photo(chat_id, photo=open(photo_path, 'rb'), caption = 'Вот это я 😄')
 
